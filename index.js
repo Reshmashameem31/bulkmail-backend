@@ -10,7 +10,7 @@ app.use(express.json()); // middleware
 // Connect to MongoDB Atlas
 mongoose
   .connect(
-    "mongodb+srv://shameemreshma:12345@cluster0.faz2m0g.mongodb.net/passkey?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://shameemreshma:12345@cluster0.faz2m0g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch(() => console.log("Failed to connect to MongoDB"));
