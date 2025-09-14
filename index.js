@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json()) //middelware
 
-mongoose.connect("mongodb+srv://shameemreshma:12345@cluster0.txyblbt.mongodb.net/passkey?retryWrites=true&w=majority&appName=Cluster0").then(function(){
+mongoose.connect("mongodb+srv://shameemreshma:12345@cluster0.faz2m0g.mongodb.net/passkey?retryWrites=true&w=majority&appName=Cluster0").then(function(){
   console.log("Connected to db")
 }).catch(function(){
   console.log("Failed")
