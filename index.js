@@ -100,7 +100,7 @@ app.get("/emails", async function(req, res) {
     res.send("Error fetching history");
   }
 });
-app.listen(3000,function(){
-  console.log("Server Started...")
-})
-
+const PORT = process.env.PORT || 3000; // Use Render's port if available
+app.listen(PORT, function(){
+  console.log(`Server Started on port ${PORT}...`);
+});
